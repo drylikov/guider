@@ -1,0 +1,19 @@
+matrix:
+  include:
+    - language: python
+      python:
+        - 2.7
+        - 3.4
+        - 3.5
+        - 3.6
+      before_install:
+        - sudo python setup.py install
+        - cd guider
+      install:
+        - pip install -r requirements.txt
+      script:
+        - make
+        - guider top -R 10 -o
+        - guider draw guider.out
+      after_success:
+        - cd ..

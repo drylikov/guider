@@ -1,0 +1,54 @@
+*.pyc
+*.o
+*.so
+*.swp
+*.png
+*.jpg
+*.bmp
+*.out*
+*.dat*
+*.log
+*.pot
+*.report
+__pycache__
+build
+static
+
+# virtualenv
+.python-version
+
+# Distribution / packaging
+MANIFEST
+*.idea
+
+# python Virtualenv
+venv/
+
+# flask secret info
+agent/app/secrets.json
+
+# django secret info
+secret.json
+db.sqlite3
+
+# vscode
+.vscode/
+.DS_Store
+node_modules
+/dist
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
